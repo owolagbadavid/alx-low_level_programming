@@ -16,19 +16,33 @@ void times_table(void)
 	{
 		while (col <= 9)
 		{
-			prod = row * col;
-			if (prod > 9)
+			if (col == 0)
 			{
-				_putchar((prod / 10) + '0');
-			}
-				_putchar((prod % 10) + '0');
-			if (col < 9)
-			{
+				_putchar('0');
 				_putchar(',');
-				_putchar(' ');
 			}
 			else
-				_putchar('\n');
+			{
+				prod = col * row;
+				_putchar(' ');
+				if (prod > 9)
+				{
+					_putchar((prod / 10) + '0');
+					_putchar((prod % 10) + '0');
+				}
+				else
+				{
+					_putchar(' ');
+					_putchar(prod + '0');
+				}
+				if (col != 9)
+					_putchar(',');
+				else
+					_putchar('\n');
+			}
+
+
+
 			col++;
 		}
 		col = 0;
