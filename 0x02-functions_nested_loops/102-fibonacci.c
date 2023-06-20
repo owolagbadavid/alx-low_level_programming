@@ -13,7 +13,7 @@ int main(void)
 
 	for (l = 0; l < 50; l++)
 	{
-		if ( l != 49)
+		if (l != 49)
 			printf("%.0f, ", j);
 		else
 			printf("%.0f\n", j);
