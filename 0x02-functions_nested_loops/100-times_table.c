@@ -14,15 +14,28 @@ void print_times_table(int n)
 	{
 		while (col <= n)
 		{
-			prod = row * col;
-			_print_int(prod);
-			if (col != n)
-			{
-				_putchar(',');
-				_putchar(' ');
-			}
+                        if (col == 0)
+                        {
+                                _putchar('0');
+                                _putchar(',');
+                        }
 			else
-				_putchar('\n');
+			{
+				prod = row * col;
+				if (prod < 1000)
+					_putchar(' ');
+				if (prod < 100)
+					_putchar(' ');
+				if(prod < 10)
+					_putchar(' ');
+				_print_int(prod);
+				if (col != n)
+				{
+					_putchar(',');
+				}
+				else
+					_putchar('\n');
+			}
 			col++;
 		}
 		col = 0;
