@@ -8,7 +8,7 @@
 /* betty style doc for function main goes there */
 int main(void)
 {
-	long int i = 0, j = 1, l = 0, temp;
+	unsigned long int i = 0, j = 1, l = 0, temp;
 	for (l = 0; l < 50; l++)
 	{
 		_print_int(j);
