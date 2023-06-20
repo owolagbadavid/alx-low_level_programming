@@ -8,15 +8,15 @@
 /* betty style doc for function main goes there */
 int main(void)
 {
-	long double i = 1, j = 1, temp;
+	double i = 1, j = 1, temp;
 	int l;
 
 	for (l = 0; l < 98; l++)
 	{
 		if (l != 97)
-			printf("%.0Lf, ", j);
+			printf("%.0f, ", j);
 		else
-			printf("%.0Lf\n", j);
+			printf("%.0f\n", j);
 		temp = i;
 		i = j;
 		j = temp + i;
