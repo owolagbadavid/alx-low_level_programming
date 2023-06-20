@@ -18,7 +18,7 @@ int main(void)
 		i = j;
 		j = temp + i;
 	}
-	printf("%d\n", sum);
+	printf("%ld\n", sum);
 
 
 	return (0);
