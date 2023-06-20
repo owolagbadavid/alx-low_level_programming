@@ -31,11 +31,9 @@ void print_times_table(int n)
 				if (prod < 10)
 					_putchar(' ');
 				_print_int(prod);
-				if (col == n)
-				{
-					_putchar('\n');
-				}
 			}
+			if (col == n)
+				_putchar('\n');
 			col++;
 		}
 		col = 0;
