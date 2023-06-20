@@ -20,8 +20,7 @@ void print_alphabet_x10(void)
 		}
 		letter = 'a';
 		i++;
-		if (i != 10)
+		if (i <= 10)
 			_putchar('\n');
 	}
-	_putchar('\n');
 }
