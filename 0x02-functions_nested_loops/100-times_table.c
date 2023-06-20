@@ -9,46 +9,37 @@
 void print_times_table(int n)
 {
 	int row = 0, col = 0, prod = 0;
-	
+
 	if (n > 15 || n < 0)
 		return;
-	if (n == 0)
-	{
-		_putchar(0);
-		_putchar('\n');
-		return;
-	}	
-
 	while (row <= n)
 	{
 		while (col <= n)
 		{
-                        if (col == 0)
-                        {
-                                _putchar('0');
-                                _putchar(',');
-                        }
+			if (col == 0)
+			{
+				_putchar('0');
+			}
 			else
 			{
 				prod = row * col;
+				_putchar(',');
 				if (prod < 1000)
 					_putchar(' ');
 				if (prod < 100)
 					_putchar(' ');
-				if(prod < 10)
+				if (prod < 10)
 					_putchar(' ');
 				_print_int(prod);
-				if (col != n)
+				if (col == n)
 				{
-					_putchar(',');
-				}
-				else
 					_putchar('\n');
+				}
 			}
 			col++;
 		}
 		col = 0;
-		row++;	
+		row++;
 	}
 }
 
