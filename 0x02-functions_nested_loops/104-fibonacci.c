@@ -22,7 +22,5 @@ int main(void)
 		j = temp + i;
 	}
 
-
-
-	return (0);
+	return (1);
 }
