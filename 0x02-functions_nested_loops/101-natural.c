@@ -10,13 +10,14 @@ int main(void)
 {
 
 	int i = 0;
-
+	int result;
 	while (i < 1024)
 	{
 		if (i % 3 == 0 || i % 5 == 0)
-			_print_int(i);
+			result += i;
 		i++;
 	}
+	_print_int(result);
 	_putchar('\n');
 
 	return (0);
