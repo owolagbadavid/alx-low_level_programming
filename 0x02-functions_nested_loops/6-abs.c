@@ -11,18 +11,18 @@
 */
 int _abs(int n)
 {
-	int result = n * print_sign(n);
+	int result = n * _print_sign(n);
 
 	return (result);
 
 }
 /**
-* print_sign - prints sign
+* _print_sign - prints sign
 *
 * @n: the number
 * Return: sign
 */
-int print_sign(int n)
+int _print_sign(int n)
 {
 	if (n > 0)
 	{
