@@ -15,6 +15,7 @@ int main(void)
 	{
 		if (i % 3 == 0 || i % 5 == 0)
 			_print_int(i);
+		i++;
 	}
 	_putchar('\n');
 
