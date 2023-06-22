@@ -8,7 +8,7 @@
 */
 void print_number(int n)
 {
-	int d; /* digit variable */
+	unsigned int d; /* digit variable */
 
 	if (n < 0) /* if negative number */
 	{
