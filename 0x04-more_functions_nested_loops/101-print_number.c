@@ -8,17 +8,20 @@
 */
 void print_number(int n)
 {
-	unsigned int d; /* digit variable */
+	unsigned int en = 0;
 
-	if (n < 0) /* if negative number */
+	if (n < 0)
 	{
-		_putchar('0' - 3); /* print a minus sign */
-		n = -n; /* make n positive */
+		_putchar('0' - 3);
+		en = -n;
 	}
-	d = n % 10; /* get the last digit */
-	if ((n / 10) > 0) /* if there are more digits */
+	else
 	{
-		print_number(n / 10); /* print the remaining digits recursively */
+		en = n;
 	}
-	_putchar(d + '0'); /* print the last digit */
+	if ((n / 10) > 0)
+	{
+		print_number(en / 10);
+	}
+	_putchar((en % 10) + '0');
 }
