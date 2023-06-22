@@ -19,7 +19,7 @@ void print_number(int n)
 	{
 		en = n;
 	}
-	if ((n / 10) > 0)
+	if ((en / 10) > 0)
 	{
 		print_number(en / 10);
 	}
