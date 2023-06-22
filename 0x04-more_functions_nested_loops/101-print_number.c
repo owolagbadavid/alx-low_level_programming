@@ -12,7 +12,7 @@ void print_number(int n)
 
 	if (n < 0) /* if negative number */
 	{
-		_putchar('-'); /* print a minus sign */
+		_putchar('0' - 3); /* print a minus sign */
 		n = -n; /* make n positive */
 	}
 	d = n % 10; /* get the last digit */
