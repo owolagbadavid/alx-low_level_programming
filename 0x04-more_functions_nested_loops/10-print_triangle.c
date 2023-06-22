@@ -10,8 +10,11 @@ void print_triangle(int size)
 {
 	int number = 0;
 
-	if (size < 0)
+	if (size <= 0)
+	{
+		_putchar('\n);
 		return;
+	}
 	while (number < size)
 	{
 		int i;
