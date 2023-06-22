@@ -8,7 +8,8 @@ int main(void)
 {
 	unsigned long int number = 612852475143, prime = 2, max = 1;
 
-	while (prime <= number) {
+	while (prime <= number)
+	{
 		if (number % prime == 0)
 		{
 			max = prime;
