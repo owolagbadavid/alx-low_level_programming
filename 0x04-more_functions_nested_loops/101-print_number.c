@@ -16,7 +16,7 @@ void print_number(int n)
 		n = -n; /* make n positive */
 	}
 	d = n % 10; /* get the last digit */
-	if (n / 10 > 0) /* if there are more digits */
+	if ((n / 10) > 0) /* if there are more digits */
 	{
 		print_number(n / 10); /* print the remaining digits recursively */
 	}
