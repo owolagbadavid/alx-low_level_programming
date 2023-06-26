@@ -11,9 +11,14 @@ char *_strcpy(char *dest, char *src)
 {
 
 
-	int counter = 0;
+	int counter = 0, length = 0;
 
-	while (src[counter] != '\0')
+	while (src[length] != '\0')
+	{
+		length++;
+	}
+
+	while (counter <= length)
 	{
 		dest[counter] = src[counter];
 		counter++;
