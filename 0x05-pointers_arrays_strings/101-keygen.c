@@ -13,9 +13,8 @@ int main(void)
 {
 	int target = 2772, i = 0, j = 0, random;
 	char password[100];
-	time_t t;
 
-	srand((int) time(&t));
+	srand((int) time(NULL));
 	while (target > 126)
 	{
 		random = rand() % 126;
