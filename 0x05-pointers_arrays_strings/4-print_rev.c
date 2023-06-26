@@ -14,7 +14,6 @@ void print_rev(char *s)
 	
 	if ( counter == 0 )
 	{
-		_putchar('');
 		_putchar('\n');
 		return;
 	}
