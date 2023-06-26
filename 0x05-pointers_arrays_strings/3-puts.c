@@ -12,7 +12,7 @@ void _puts(char *str)
 
 	int counter = 0;
 
-	while (s[counter] != '\0')
+	while (str[counter] != '\0')
 	{
 		_putchar(s[counter]);
 		counter++;
