@@ -15,10 +15,10 @@ void print_array(int *a, int n)
 
 	while (counter < n)
 	{
-		_putchar(a[counter]);
+		printf("%d", a[counter]);
 		if (counter < (n - 1))
 		{
-			_putchar(',');
+			printf(", ");
 		}
 		counter++;
 	}
