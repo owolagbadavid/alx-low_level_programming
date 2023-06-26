@@ -29,7 +29,7 @@ int main(void)
 	{
 		i--;
 	}
-	
+
 
 	while (j <= i)
 	{
