@@ -1,14 +1,14 @@
 #include "main.h"
 
 /**
- * infinte_add - adds infinitely
+ * infinite_add - adds infinitely
  *
  * @n1: char
  * @n2: char (actually array of digits)
  * @r: char
  * @size_r: int
  *
- *
+ * Return: string or 0
  *
  */
 
