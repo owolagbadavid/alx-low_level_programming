@@ -22,7 +22,7 @@ char *str_concat(char *s1, char *s2)
 		size1 = i;
 	}
 	else
-		*s1 = "";
+		*s1 = '';
 	if (s2)
 	{
 		for (i = 0; s2[i] != '\0'; i++)
@@ -31,7 +31,7 @@ char *str_concat(char *s1, char *s2)
 		size += i;
 	}
 	else
-		*s2 = "";
+		*s2 = '';
 	p = (char *) malloc(size + 1);
 	if (!p)
 		return (NULL);
