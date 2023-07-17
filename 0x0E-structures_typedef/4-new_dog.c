@@ -3,7 +3,7 @@
 #include <stdlib.h>
 
 /**
- * new_dog - new dog 
+ * new_dog - new dog
  * @name: string
  * @age: float
  * @owner: string
