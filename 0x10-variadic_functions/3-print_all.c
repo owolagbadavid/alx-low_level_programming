@@ -1,4 +1,5 @@
 #include "variadic_functions.h"
+
 /**
  * print_all - sums all
  * @format: char
@@ -31,7 +32,7 @@ void print_all(const char * const format, ...)
 			break;
 		case 's':
 			str = va_arg(args, char *);
-			if (str == NULL)
+			if (!str || !*str)
 				str = "(nil)";
 			printf("%s%s", str, seprt);
 			break;
