@@ -12,7 +12,6 @@ void print_all(const char * const format, ...)
 	va_list args;
 
 	va_start(args, format);
-	j = 0;
 	while (format[j] && format)
 	{
 		seprt = "";
@@ -32,7 +31,7 @@ void print_all(const char * const format, ...)
 			break;
 		case 's':
 			str = va_arg(args, char *);
-			if (!(str[0]) || !str)
+			if (!str)
 				str = "(nil)";
 			printf("%s%s", str, seprt);
 			break;
