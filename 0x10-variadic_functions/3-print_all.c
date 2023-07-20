@@ -13,7 +13,7 @@ void print_all(const char * const format, ...)
 
 	va_start(args, format);
 	j = 0;
-	while (format[j])
+	while (format[j] && format)
 	{
 		seprt = "";
 		if (format[j + 1])
