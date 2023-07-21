@@ -2,6 +2,13 @@
 #define __VARIADIC_FUNCTIONS_H__
 #include <stdarg.h>
 #include <stdio.h>
+/**
+ * struct printer - printer struct
+ * @print: print
+ * @symbol: symbol
+ *
+ * Description: structure of printer
+ */
 typedef struct printer
 {
 	char *symbol;
