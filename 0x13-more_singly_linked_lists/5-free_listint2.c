@@ -3,7 +3,7 @@
 /**
  * free_listint2 - func
  * @head: pointer double
- * 
+ *
  * Return: void
  */
 void free_listint2(listint_t **head)
