@@ -13,7 +13,7 @@ int main(int argc, char *argv[])
 {
 	unsigned int i, b;
 	size_t len, add;
-	char l[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/";
+	char *l = "A-CHRDw87lNS0E9B2TibgpnMVys5XzvtOGJcYLU+4mjW6fxqZeF3Qa1rPhdKIouk";
 	char p[7] = "      ";
 
 	if (argc != 2)
