@@ -2,6 +2,7 @@
 #define __MAIN_H__
 #include <stdio.h>
 #include <stdlib.h>
+#include <unistd.h>
 
 int _putchar(char c);
 int _islower(int c);
