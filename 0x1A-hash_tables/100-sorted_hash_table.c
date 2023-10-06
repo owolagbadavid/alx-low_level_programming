@@ -72,33 +72,46 @@ int shash_table_set(shash_table_t *ht, const char *key, const char *value)
 
 	new_node->next = ht->array[index];
 	ht->array[index] = new_node;
+	add_sorted_node(ht, new_node);
+	return (1);
+}
+
+/**
+ * add_sorted_node - adds a node to the sorted hash table
+ * @ht: sorted hash table to add the node to
+ * @new_node: node to add
+*/
+void add_sorted_node(shash_table_t *ht, shash_node_t *new_node)
+{
+	shash_node_t *temp = NULL;
 
 	if (ht->shead == NULL)
 	{
 		ht->shead = new_node;
 		ht->stail = new_node;
-	}
-	else if (strcmp(ht->shead->key, key) > 0)
-	{
-		new_node->snext = ht->shead;
-		ht->shead->sprev = new_node;
-		ht->shead = new_node;
-	}
-	else
-	{
-		temp = ht->shead;
-		while (temp->snext != NULL && strcmp(temp->snext->key, key) < 0)
-			temp = temp->snext;
-		new_node->snext = temp->snext;
-		if (temp->snext == NULL)
-			ht->stail = new_node;
-		else
-			temp->snext->sprev = new_node;
-		new_node->sprev = temp;
-		temp->snext = new_node;
+		return;
 	}
 
-	return (1);
+	temp = ht->shead;
+	while (temp != NULL)
+	{
+		if (strcmp(new_node->key, temp->key) < 0)
+		{
+			new_node->snext = temp;
+			new_node->sprev = temp->sprev;
+			if (temp->sprev != NULL)
+				temp->sprev->snext = new_node;
+			else
+				ht->shead = new_node;
+			temp->sprev = new_node;
+			return;
+		}
+		temp = temp->snext;
+	}
+
+	new_node->sprev = ht->stail;
+	ht->stail->snext = new_node;
+	ht->stail = new_node;
 }
 
 /**
