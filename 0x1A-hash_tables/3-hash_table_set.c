@@ -5,7 +5,7 @@
  * @ht: hash table to add or update the key/value to
  * @key: key
  * @value: value associated with the key
- * 
+ *
  * Return: 1 if it succeeded, 0 otherwise
  */
 int hash_table_set(hash_table_t *ht, const char *key, const char *value)
@@ -45,10 +45,10 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
  * create_new_node - creates a new node
  * @key: key
  * @value: value associated with the key
- * 
+ *
  * Return: pointer to the new node
  */
-hash_node_t *create_new_node (const char *key, const char *value)
+hash_node_t *create_new_node(const char *key, const char *value)
 {
 	hash_node_t *new_node = NULL;
 
