@@ -66,7 +66,7 @@ int shash_table_set(shash_table_t *ht, const char *key, const char *value)
 		temp = temp->next;
 	}
 
-	new_node = create_new_node(key, value);
+	new_node = create_new_snode(key, value);
 	if (new_node == NULL)
 		return (0);
 
@@ -108,7 +108,7 @@ int shash_table_set(shash_table_t *ht, const char *key, const char *value)
  *
  * Return: pointer to the new node
  */
-shash_node_t *create_new_node(const char *key, const char *value)
+shash_node_t *create_new_snode(const char *key, const char *value)
 {
 	shash_node_t *new_node = NULL;
 
