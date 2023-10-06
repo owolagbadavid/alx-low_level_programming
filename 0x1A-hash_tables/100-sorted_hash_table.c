@@ -102,7 +102,7 @@ int shash_table_set(shash_table_t *ht, const char *key, const char *value)
 }
 
 /**
- * create_new_node - creates a new node
+ * create_new_snode - creates a new node
  * @key: key
  * @value: value associated with the key
  *
